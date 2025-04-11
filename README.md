@@ -5,6 +5,12 @@ Django email backend which invokes system `sendmail` binary.
 
 ## Usage
 
+Install via pip:
+
+```
+pip install cr-sendmail-django
+```
+
 In your Django settings, set the email backend:
 
 ```python
@@ -26,7 +32,7 @@ This package uses Python logging to logger named `cr-sendmail-django`. To see lo
 
 ## Compatibility with `django_sendmail_backend`
 
-This package also provides a compatible `django_sendmail_backend` package, as a drop-in replacement for existing sites without modification.
+This package also provides a drop-in replacement for `django_sendmail_backend` package, for existing sites without modification.
 
 ```python
 EMAIL_BACKEND = "django_sendmail_backend.backends.EmailBackend"
