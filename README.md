@@ -17,6 +17,8 @@ You can also specify a path to the `sendmail` binary:
 SENDMAIL_BINARY = "/path/to/sendmail"
 ```
 
+NOTE: this package does not send mail on its own. It requires a fully configured Mail Transport Agent (MTA) on your server. Only use this package if you have configured an MTA such as `exim`, `postfix`, etc. on your server. CodeRed Cloud hosting *does* provide a fully functional MTA with paid plans; however other providers such as AWS, Azure, Digital Ocean, Heroku, etc. do not by default.
+
 ## Logging
 
 This package uses Python logging to logger named `cr-sendmail-django`. To see log output, configure [Django logging](https://docs.djangoproject.com/en/stable/howto/logging/).
