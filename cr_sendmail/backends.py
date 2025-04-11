@@ -7,8 +7,8 @@ from subprocess import PIPE
 from subprocess import Popen
 
 from django.conf import settings
-from django.core.mail.message import sanitize_address
 from django.core.mail.backends.base import BaseEmailBackend
+from django.core.mail.message import sanitize_address
 
 
 LOGGER = logging.getLogger("cr-sendmail-django")
